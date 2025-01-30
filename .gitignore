@@ -1,0 +1,54 @@
+# Flutter/Dart
+**/doc/api/
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+*.flutter-plugins
+*.flutter-plugins-dependencies
+*.dart_tool/
+*.lock
+
+# Logs & Debugging
+debug.log
+stacktrace.txt
+
+# Editor & IDE
+.vscode/
+.idea/
+*.iml
+
+# iOS
+ios/Flutter/Flutter.podspec
+ios/.symlinks/
+ios/Pods/
+ios/Podfile.lock
+ios/Runner.xcworkspace/
+ios/Runner/GeneratedPluginRegistrant.h
+ios/Runner/GeneratedPluginRegistrant.m
+
+# Android
+android/.gradle/
+android/app/build/
+android/local.properties
+android/key.properties
+
+# Generated Files
+*.DS_Store
+*.log
+*.swp
+*.swo
+*.swn
+
+# Linux
+linux/
+
+# MacOS
+macos/
+
+# Windows
+windows/
+
+# Web
+web/
