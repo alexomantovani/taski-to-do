@@ -25,56 +25,67 @@ class CreateModal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BottomSheet(
-      onClosing: () {},
-      builder: (context) => Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 26.0),
-        child: Form(
-          key: formKey,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              const SizedBox(height: 30.0),
-              CustomField(
-                controller: titleController,
-                defaultBorder: false,
-                prefixIcon: Padding(
-                  padding: const EdgeInsets.only(right: 16.0),
-                  child: SvgPicture.asset(Assets.kIcEmptyBox),
+    return DraggableScrollableSheet(
+      initialChildSize: 0.5,
+      maxChildSize: 0.9,
+      minChildSize: 0.3,
+      expand: false,
+      builder: (context, scrollController) => SingleChildScrollView(
+        controller: scrollController,
+        child: Padding(
+          padding: EdgeInsets.only(
+            left: 26.0,
+            right: 26.0,
+            bottom: MediaQuery.of(context).viewInsets.bottom,
+          ),
+          child: Form(
+            key: formKey,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                const SizedBox(height: 30.0),
+                CustomField(
+                  controller: titleController,
+                  defaultBorder: false,
+                  prefixIcon: Padding(
+                    padding: const EdgeInsets.only(right: 16.0),
+                    child: SvgPicture.asset(Assets.kIcEmptyBox),
+                  ),
+                  hintText: "What’s in your mind?",
+                  hintStyle: context.textTheme.bodyMedium,
                 ),
-                hintText: "What’s in your mind?",
-                hintStyle: context.textTheme.bodyMedium,
-              ),
-              const SizedBox(height: 30.0),
-              CustomField(
-                controller: descriptionController,
-                defaultBorder: false,
-                prefixIcon: Padding(
-                  padding: const EdgeInsets.only(right: 16.0),
-                  child: SvgPicture.asset(Assets.kIcEdit),
+                const SizedBox(height: 30.0),
+                CustomField(
+                  controller: descriptionController,
+                  defaultBorder: false,
+                  prefixIcon: Padding(
+                    padding: const EdgeInsets.only(right: 16.0),
+                    child: SvgPicture.asset(Assets.kIcEdit),
+                  ),
+                  hintText: "Add a note...",
+                  hintStyle: context.textTheme.bodyMedium,
                 ),
-                hintText: "Add a note...",
-                hintStyle: context.textTheme.bodyMedium,
-              ),
-              SizedBox(height: context.height / 5),
-              Consumer<TaskViewModel>(
-                builder: (context, taskViewModel, child) {
-                  switch (taskViewModel.state) {
-                    case TaskState.loading:
-                      return const CircularProgressIndicator();
-                    default:
-                      return TextButton(
-                        onPressed: () => _createTask(context),
-                        child: Text(
-                          'Create',
-                          style: context.textTheme.titleLarge!
-                              .copyWith(color: Styles.kPrimaryBlue),
-                        ),
-                      );
-                  }
-                },
-              ),
-            ],
+                SizedBox(height: context.height / 5),
+                Consumer<TaskViewModel>(
+                  builder: (context, taskViewModel, child) {
+                    switch (taskViewModel.state) {
+                      case TaskState.loading:
+                        return const CircularProgressIndicator();
+                      default:
+                        return TextButton(
+                          key: const Key('create_task_button'),
+                          onPressed: () => _createTask(context),
+                          child: Text(
+                            'Create',
+                            style: context.textTheme.titleLarge!
+                                .copyWith(color: Styles.kPrimaryBlue),
+                          ),
+                        );
+                    }
+                  },
+                ),
+              ],
+            ),
           ),
         ),
       ),
