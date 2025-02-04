@@ -18,7 +18,8 @@ class ListTodoTaskPage extends StatelessWidget {
       switch (taskViewModel.state) {
         case TaskState.initial ||
               TaskState.createSuccess ||
-              TaskState.filterSuccess:
+              TaskState.filterSuccess ||
+              TaskState.getByIdSuccess:
           context.initTasks();
           return SizedBox.shrink();
 

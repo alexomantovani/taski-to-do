@@ -47,7 +47,9 @@ class _CreateTaskPageState extends State<CreateTaskPage> {
           case TaskState.loading:
             return LoadingWidget();
 
-          case TaskState.createSuccess || TaskState.loadSuccess:
+          case TaskState.createSuccess ||
+                TaskState.loadSuccess ||
+                TaskState.getByIdSuccess:
             final tasks = taskViewModel.tasksNotifier.value;
             if (tasks.isEmpty) return const EmptyTasks();
 
