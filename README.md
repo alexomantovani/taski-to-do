@@ -1,6 +1,16 @@
-# Desafio de Código - Mobile
+# Desafio de Código - Mobile - Taski
+![GitHub repo size](https://img.shields.io/github/repo-size/alexomantovani/taski-to-do?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/alexomantovani/taski-to-do?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/alexomantovani/taski-to-do?style=for-the-badge)
+![GitHub open issues](https://img.shields.io/github/issues/alexomantovani/taski-to-do?style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/alexomantovani/taski-to-do?style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr-closed/alexomantovani/taski-to-do?style=for-the-badge)
 
-Este projeto foi desenvolvido utilizando **Flutter**. Siga as instruções abaixo para rodá-lo localmente.
+
+![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
+
+Este projeto foi desenvolvido utilizando **Dart** e **Flutter**. Siga as instruções abaixo para rodá-lo localmente.
 
 ## 📋 Pré-requisitos
 
@@ -16,48 +26,48 @@ Este projeto foi desenvolvido utilizando **Flutter**. Siga as instruções abaix
 
 Clone este repositório para o seu ambiente local:
 
-git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
-cd SEU-REPOSITORIO
+git clone https://github.com/alexomantovani/taski-to-do.git
+cd CAMINHO-SEU-REPOSITORIO/taski-to-do
 
 2. Rodando no VSCode
 
-   1. Abra o VSCode.
-   2. Instale a extensão do Flutter (se ainda não a tiver instalada) na loja de extensões do VSCode.
-   3. Abra a pasta do projeto no VSCode:
-   4. code .
-   5. Selecione o dispositivo de emulação ou um dispositivo físico conectado.
-   6. Execute o aplicativo com o atalho F5 ou clicando em Run no menu.
+- Abra o VSCode.
+- Instale a extensão do Flutter (se ainda não a tiver instalada) na loja de extensões do VSCode.
+- Abra a pasta do projeto no VSCode:
+- code .
+- Selecione o dispositivo de emulação ou um dispositivo físico conectado.
+- Execute o aplicativo com o atalho F5 ou clicando em Run no menu.
 
 3. Rodando no Android Studio
 
-   1. Abra o Android Studio.
-   2. Instale a extensão do Flutter (se ainda não a tiver instalada) em Preferences > Plugins > Marketplace e procure por Flutter.
-   3. Abra a pasta do projeto no Android Studio.
-   4. Selecione o dispositivo de emulação ou um dispositivo físico conectado.
-   5. Execute o aplicativo clicando em Run ou pressionando Shift + F10.
+- Abra o Android Studio.
+- Instale a extensão do Flutter (se ainda não a tiver instalada) em Preferences > Plugins > Marketplace e procure por Flutter.
+- Abra a pasta do projeto no Android Studio.
+- Selecione o dispositivo de emulação ou um dispositivo físico conectado.
+- Execute o aplicativo clicando em Run ou pressionando Shift + F10.
 
 4. Rodando no Xcode (para iOS)
 
-   1. Abra o terminal e navegue até o diretório do projeto:
-   2. cd SEU-REPOSITORIO
-   3. Execute o comando para limpar o projeto:
-   4. flutter clean
-   5. Abra o projeto no Xcode:
-   6. open ios/Runner.xcworkspace
-   7. No Xcode, selecione o dispositivo de emulação ou um dispositivo físico conectado.
-      Clique no botão Run (triângulo verde) ou use o atalho Cmd + R para rodar o aplicativo.
+- Abra o terminal e navegue até o diretório do projeto:
+- cd CAMINHO-SEU-REPOSITORIO/taski-to-do
+- Execute o comando para limpar o projeto:
+- flutter clean
+- Abra o projeto no Xcode:
+- open ios/Runner.xcworkspace
+- No Xcode, selecione o dispositivo de emulação ou um dispositivo físico conectado.
+- Clique no botão Run (triângulo verde) ou use o atalho Cmd + R para rodar o aplicativo.
 
 5. Rodando no IntelliJ IDEA
 
-   1. Abra o IntelliJ IDEA.
-   2. Instale a extensão do Flutter (se ainda não a tiver instalada) em Preferences > Plugins > Marketplace e procure por Flutter.
-   3. Abra a pasta do projeto no IntelliJ IDEA.
-   4. Selecione o dispositivo de emulação ou um dispositivo físico conectado.
-   5. Execute o aplicativo com o atalho Shift + F10 ou clicando em Run no menu.
+- Abra o IntelliJ IDEA.
+- Instale a extensão do Flutter (se ainda não a tiver instalada) em Preferences > Plugins > Marketplace e procure por Flutter.
+- Abra a pasta do projeto no IntelliJ IDEA.
+- Selecione o dispositivo de emulação ou um dispositivo físico conectado.
+- Execute o aplicativo com o atalho Shift + F10 ou clicando em Run no menu.
 
 ## 🗄️ Banco de Dados
 
-Este projeto utiliza um banco de dados local (SQLite ou Hive). Certifique-se de que o dispositivo ou emulador tenha permissões para acessar o armazenamento local.
+Este projeto utiliza um banco de dados local Hive. Certifique-se de que o dispositivo ou emulador tenha permissões para acessar o armazenamento local.
 
 ## 🧪 Testes Automatizados
 
