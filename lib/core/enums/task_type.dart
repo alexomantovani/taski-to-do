@@ -5,6 +5,7 @@ enum TaskState {
   createSuccess,
   loadSuccess,
   filterSuccess,
+  getByIdSuccess,
   doneSucces,
   deleteSuccess
 }

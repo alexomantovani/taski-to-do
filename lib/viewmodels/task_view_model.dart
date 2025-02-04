@@ -10,11 +10,15 @@ class TaskViewModel extends ChangeNotifier {
 
   List<TaskModel> _tasks = [];
   TaskState _state = TaskState.initial;
+  String? _taskId;
 
   final ValueNotifier<List<TaskModel>> _tasksNotifier = ValueNotifier([]);
   final ValueNotifier<Map<String, bool>> expandedTasks = ValueNotifier({});
 
+  set id(String value) => value.isNotEmpty ? _taskId = value : _taskId = null;
+
   TaskState get state => _state;
+  String? get taskId => _taskId;
   ValueNotifier<List<TaskModel>> get tasksNotifier => _tasksNotifier;
   List<TaskModel> get tasks => _tasksNotifier.value;
 
@@ -99,7 +103,7 @@ class TaskViewModel extends ChangeNotifier {
       if (task != null) {
         _tasksNotifier.value = [task!];
       }
-    }, TaskState.filterSuccess);
+    }, TaskState.getByIdSuccess);
 
     return task;
   }
