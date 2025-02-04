@@ -47,6 +47,7 @@ class CoreUtils {
   }) async {
     await showModalBottomSheet(
       context: context,
+      isScrollControlled: true,
       builder: (context) => child,
     ).whenComplete(() {
       if (!context.mounted) return;
