@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
 
@@ -18,6 +19,7 @@ void main() async {
 
   final taskBox = await Hive.openBox<TaskModel>('tasks');
   final taskRepository = TaskRepository(taskBox);
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
   runApp(
     MultiProvider(
