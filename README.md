@@ -1,4 +1,5 @@
 # Desafio de Código - Mobile - Taski
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/alexomantovani/taski-to-do?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/alexomantovani/taski-to-do?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/alexomantovani/taski-to-do?style=for-the-badge)
@@ -6,11 +7,15 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/alexomantovani/taski-to-do?style=for-the-badge)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr-closed/alexomantovani/taski-to-do?style=for-the-badge)
 
-
 ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
 
 Este projeto foi desenvolvido utilizando **Dart** e **Flutter**. Siga as instruções abaixo para rodá-lo localmente.
+
+<p align="center">
+  <img src="assets/videos/iPhone.gif" width="300"/>
+  <img src="assets/videos/android.gif" width="300" height="650"/>
+</p>
 
 ## 📋 Pré-requisitos
 
